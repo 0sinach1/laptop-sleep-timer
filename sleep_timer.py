@@ -4,19 +4,9 @@ import time
 file_path = r"C:\Users\Vinfotech\OneDrive\Documents\Coding\Projects\Python\SleepLaptop.bat"
 
 
-time_option = input('Do you want a me to sleep the laptop in seconds or in minutes?(s/m): ')
-
-if time_option == "s":
-    sec_time = int(input('In how many seconds do you me to sleep at?: '))
-    # print(sec_time)
-elif time_option == "m":
-    minutes_time = int(input('In how many minutes do you me to sleep at?: '))
-    print(minutes_time)
-else:
-    print('invalid option')
-
-
 is_counting = True
+
+
 
 def sleep_min(minutes):
     real_time = 0
@@ -31,7 +21,7 @@ def sleep_min(minutes):
             # print(f"time left: ")
             seconds -= 1
             print(f"{seconds}")  
-            
+            print("Bye bye")
             
         if (seconds == real_time):
             os.startfile(file_path)
@@ -39,7 +29,6 @@ def sleep_min(minutes):
         
         
         
-sleep_min(minutes_time)
 
 
 
@@ -54,11 +43,25 @@ def sleep_sec(seconds):
             # print(f"time left: ")
             seconds -= 1
             print(f"{seconds}")  
-            
+            print("Bye bye")
             
         if (seconds == real_time):
             os.startfile(file_path)
             break
         
         
-sleep_sec(sec_time)
+
+
+
+time_option = input('Do you want a me to sleep the laptop in seconds or in minutes?(s/m): ')
+
+if time_option == "s":
+    sec_time = int(input('In how many seconds do you me to sleep at?: '))
+    sleep_sec(sec_time)
+    # print(sec_time)
+elif time_option == "m":
+    minutes_time = int(input('In how many minutes do you me to sleep at?: '))
+    sleep_min(minutes_time)
+    # print(minutes_time)
+else:
+    print('invalid option')
