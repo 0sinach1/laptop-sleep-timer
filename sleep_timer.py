@@ -21,14 +21,13 @@ def sleep_min(minutes):
             # print(f"time left: ")
             seconds -= 1
             print(f"{seconds}")  
-            print("Bye bye")
+        
+
             
         if (seconds == real_time):
             os.startfile(file_path)
             break
-        
-        
-        
+    print("Goodnight Sir")
 
 
 
@@ -43,15 +42,11 @@ def sleep_sec(seconds):
             # print(f"time left: ")
             seconds -= 1
             print(f"{seconds}")  
-            print("Bye bye")
             
         if (seconds == real_time):
             os.startfile(file_path)
             break
-        
-        
-
-
+    print("Goodnight Sir")
 
 time_option = input('Do you want a me to sleep the laptop in seconds or in minutes?(s/m): ')
 
