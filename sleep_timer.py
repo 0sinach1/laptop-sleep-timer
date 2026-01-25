@@ -20,7 +20,7 @@ def sleep_min(minutes):
         if(seconds > real_time):
             # print(f"time left: ")
             seconds -= 1
-            print(f"{seconds}")  
+            print(f"{seconds}")
         
 
             
@@ -60,3 +60,5 @@ elif time_option == "m":
     # print(minutes_time)
 else:
     print('invalid option')
+    
+# make it a countdown, add more features
