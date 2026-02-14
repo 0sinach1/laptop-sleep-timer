@@ -80,3 +80,65 @@ python sleep_timer.py 15
 - 🔋 **Battery saver:** Prevents overnight drain (saves ₦5,000+/month electricity)
 
 ---
+
+
+## 🚀 Quick Start
+
+### Installation
+
+**1. Download the script**
+```bash
+git clone https://github.com/0sinach1/laptop-sleep-timer.git
+cd laptop-sleep-timer
+```
+
+**2. Run it!**
+```bash
+# Sleep in 30 minutes
+python sleep_timer.py 30
+```
+
+That's it! No installation, no dependencies.
+
+---
+
+## 📖 Usage
+
+### Basic Usage
+
+```bash
+python sleep_timer.py <minutes>
+```
+
+**Examples:**
+
+```bash
+# Sleep in 45 minutes (typical music session)
+python sleep_timer.py 45
+
+# Sleep in 1 hour (long podcast)
+python sleep_timer.py 60
+
+# Sleep in 20 minutes (quick nap)
+python sleep_timer.py 20
+```
+
+### My Typical Workflow
+
+```bash
+# 10:30 PM - Getting ready for bed
+# Open Spotify, start playlist
+
+# 10:45 PM - In bed, ready to sleep
+python sleep_timer.py 30
+
+# Output:
+# Laptop will sleep in 30 minutes (at 11:15 PM)
+# Timer started...
+
+# 11:00 PM - I'm asleep
+# 11:15 PM - Laptop automatically sleeps
+# 7:00 AM - Wake up, laptop still has battery! ✅
+```
+
+---
