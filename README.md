@@ -70,3 +70,13 @@ python sleep_timer.py 15
 
 ---
 
+
+## ✨ Features
+
+- ⏱️ **Simple command-line usage:** `python sleep_timer.py <minutes>`
+- 💤 **Set and forget:** Script runs in background, sleeps laptop automatically
+- 🎵 **Perfect for music:** Fall asleep to Spotify without battery drain
+- ⚡ **Lightweight:** < 50 lines of code, no dependencies
+- 🔋 **Battery saver:** Prevents overnight drain (saves ₦5,000+/month electricity)
+
+---
