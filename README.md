@@ -41,24 +41,32 @@
 ---
 
 
-## ✨ Features
+## 💡 The Solution
 
-### Core Functionality
-- ⏱️ **Inactivity Detection:** Monitors keyboard and mouse events
-- 💤 **Automatic Sleep:** Triggers system sleep after timeout
-- 🔧 **Configurable Timeout:** Adjust inactivity threshold (5-60 minutes)
-- 📝 **Logging:** Records all sleep events for debugging
-- 🔄 **Background Operation:** Runs silently via Task Scheduler
+**Run a Python script with your desired sleep time:**
 
-### Smart Features
-- 🎯 **Idle vs Active Detection:** Distinguishes real inactivity from background tasks
-- ⚡ **Low Resource Usage:** < 1% CPU, < 20MB RAM
-- 🛡️ **Safe Shutdown:** Checks for unsaved work warnings (optional)
-- 📊 **Statistics Tracking:** How often sleep triggered, time saved
+```bash
+python sleep_timer.py 45
+```
 
-### Advanced (Optional)
-- 🔔 **Pre-sleep Warning:** 1-minute notification before sleep
-- ⏸️ **Pause Mode:** Temporarily disable (e.g., during downloads)
-- 📅 **Schedule-based:** Different timeouts for weekday vs weekend
+**What it does:**
+1. You start the script with a time (e.g., 45 minutes)
+2. Play your Spotify/music/podcast
+3. Script waits 45 minutes
+4. Laptop automatically sleeps
+5. You're already asleep, battery saved ✅
+
+**Real-world usage:**
+```bash
+# Going to bed, want to sleep in 30 mins
+python sleep_timer.py 30
+
+# Longer playlist, need 60 mins
+python sleep_timer.py 60
+
+# Quick nap, 15 mins
+python sleep_timer.py 15
+```
 
 ---
+
