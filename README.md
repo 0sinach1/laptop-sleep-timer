@@ -22,33 +22,23 @@
 - [Author](#author)
 
 
-# 🎯 The Problem
+## 🎯 The Problem
 
-**My laptop wouldn't go to sleep automatically.**
+**You want to fall asleep listening to Spotify, but your laptop stays on all night.**
 
-**Symptoms:**
-- played songs on laptop on overnight → dead battery by morning
-- Windows sleep settings weren't working consistently
-- Battery health declining (constant power drain)
-- Wasted electricity when laptop idle for hours
+**What happens:**
+- Play music/podcast to fall asleep 🎵
+- Fall asleep within 30-60 minutes 😴
+- Laptop keeps playing all night ❌
+- Wake up to dead battery (100% → 0%) 🔋
+- Wasted electricity + reduced battery lifespan 💸
 
-**Root Cause:**
-Windows 10/11 sleep timer occasionally fails when:
-- Background processes prevent sleep
-- External devices connected
-- Power plan conflicts
-- Windows Updates pending
+**Why Windows sleep timer doesn't help:**
+- Can't set a one-time sleep timer
+- Sleep settings interfere with music playback
+- Too complex to adjust every night
 
-**Impact:**
-- ~30% battery capacity lost over 6 months
-- ₦5,000+ monthly electricity waste
-- Frustration from dead laptop before important tasks
-- Reduced laptop lifespan
-
-**Why Not Just Fix Windows Settings?**
-- Tried: Power Options, Group Policy, Registry tweaks
-- Result: Worked sometimes, failed randomly
-- Need: Reliable, automated solution
+---
 
 
 ## ✨ Features
