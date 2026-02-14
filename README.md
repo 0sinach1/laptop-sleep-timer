@@ -20,3 +20,32 @@
 - [Troubleshooting](#troubleshooting)
 - [Future Enhancements](#future-enhancements)
 - [Author](#author)
+
+
+# 🎯 The Problem
+
+**My laptop wouldn't go to sleep automatically.**
+
+**Symptoms:**
+- played songs on laptop on overnight → dead battery by morning
+- Windows sleep settings weren't working consistently
+- Battery health declining (constant power drain)
+- Wasted electricity when laptop idle for hours
+
+**Root Cause:**
+Windows 10/11 sleep timer occasionally fails when:
+- Background processes prevent sleep
+- External devices connected
+- Power plan conflicts
+- Windows Updates pending
+
+**Impact:**
+- ~30% battery capacity lost over 6 months
+- ₦5,000+ monthly electricity waste
+- Frustration from dead laptop before important tasks
+- Reduced laptop lifespan
+
+**Why Not Just Fix Windows Settings?**
+- Tried: Power Options, Group Policy, Registry tweaks
+- Result: Worked sometimes, failed randomly
+- Need: Reliable, automated solution
