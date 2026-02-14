@@ -142,3 +142,78 @@ python sleep_timer.py 30
 ```
 
 ---
+\
+m## 🔧 How It Works
+
+### The Code (It's Simple!)
+
+```python
+import sys
+import time
+import os
+
+def trigger_sleep():
+    """Puts Windows laptop to sleep"""
+    os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
+
+def main():
+    # Get minutes from command line
+    if len(sys.argv) < 2:
+        print("Usage: python sleep_timer.py <minutes>")
+        return
+    
+    minutes = int(sys.argv[1])
+    seconds = minutes * 60
+    
+    print(f"Laptop will sleep in {minutes} minutes")
+    print("Timer started...")
+    
+    # Wait
+    time.sleep(seconds)
+    
+    # Sleep laptop
+    print("Sleeping laptop now...")
+    trigger_sleep()
+
+if __name__ == "__main__":
+    main()
+```
+
+**That's it! ~20 lines of code.**
+
+### What Happens Behind the Scenes
+
+1. **Read input:** Script reads the minutes you provide
+2. **Convert to seconds:** 30 minutes = 1,800 seconds
+3. **Wait:** Script sleeps (does nothing) for that duration
+4. **Trigger sleep:** Calls Windows API to sleep the laptop
+
+---
+
+## 💡 Use Cases
+
+### 1. **Falling Asleep to Music** (Primary Use Case)
+- Start Spotify playlist
+- Run: `python sleep_timer.py 45`
+- Fall asleep peacefully
+- Laptop sleeps automatically
+
+### 2. **Podcast Listener**
+- Start podcast episode (60 mins)
+- Run: `python sleep_timer.py 65`
+- Listen while falling asleep
+- Laptop sleeps after episode ends
+
+### 3. **Nap Timer**
+- Want a 20-minute power nap
+- Run: `python sleep_timer.py 20`
+- Set phone alarm for 20 mins
+- Both wake you up
+
+### 4. **Study Sessions**
+- Study for 2 hours, then break
+- Run: `python sleep_timer.py 120`
+- Focus on work
+- Laptop reminds you to take a break (by sleeping)
+
+---
