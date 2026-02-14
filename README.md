@@ -49,3 +49,26 @@ Windows 10/11 sleep timer occasionally fails when:
 - Tried: Power Options, Group Policy, Registry tweaks
 - Result: Worked sometimes, failed randomly
 - Need: Reliable, automated solution
+
+
+## ✨ Features
+
+### Core Functionality
+- ⏱️ **Inactivity Detection:** Monitors keyboard and mouse events
+- 💤 **Automatic Sleep:** Triggers system sleep after timeout
+- 🔧 **Configurable Timeout:** Adjust inactivity threshold (5-60 minutes)
+- 📝 **Logging:** Records all sleep events for debugging
+- 🔄 **Background Operation:** Runs silently via Task Scheduler
+
+### Smart Features
+- 🎯 **Idle vs Active Detection:** Distinguishes real inactivity from background tasks
+- ⚡ **Low Resource Usage:** < 1% CPU, < 20MB RAM
+- 🛡️ **Safe Shutdown:** Checks for unsaved work warnings (optional)
+- 📊 **Statistics Tracking:** How often sleep triggered, time saved
+
+### Advanced (Optional)
+- 🔔 **Pre-sleep Warning:** 1-minute notification before sleep
+- ⏸️ **Pause Mode:** Temporarily disable (e.g., during downloads)
+- 📅 **Schedule-based:** Different timeouts for weekday vs weekend
+
+---
